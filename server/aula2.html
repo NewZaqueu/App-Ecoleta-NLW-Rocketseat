@@ -1,0 +1,50 @@
+<h1>Funcionalidades do projeto</h1>
+
+<ol>
+    <li>Cadastro dos pontos de coleta</li>
+    <li>Lista itens de coleta para cada ponto de coleta</li>
+    <li>Listar pontos filtro por estado/cidade/itens</li>
+    <li>Listar um ponto de coleta especifico</li>
+</ol>
+
+<div>
+    <h3>1° - Itens de coleta</h3>
+
+    <p>Esses itens já devem estar cadastrados na aplicação por isso devemos usar a função seed do knex</p>
+
+    <ul>
+        <li>Criar pasta seeds dentro da pasta database</li>
+        <li>Criar arquivo create_itens.ts onde iremos codar</li>
+        <li>Usar a função seed junto com o await adicionando todos os itens de coleta</li>
+        <li>Configurar arquivo execução do arquivo seed com o arquivo knexfile.ts</li>
+        <li>npx knex --knexfile knexfile.ts seed:run</li>
+    </ul>
+
+    <p>As imagens estão descritas como textos, precisamos criar uma rota para acessalas</p>
+
+    <ul>
+        <li>app.use e express static apontando para a página uploads</li>
+    </ul>
+</div>
+
+{
+    "name": "Estre Paulínia",
+    "email": "contato@estre.com",
+    "whatsap": "19 3854-0000",
+    "latitude": 125.3,
+    "longitude": 125.3,
+    "number": 502,
+    "city": "Paulínia",
+    "uf": "SP",
+    "itens": [
+      1,
+      2,
+      6
+    ]
+}
+
+
+
+
+
+
